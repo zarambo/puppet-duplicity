@@ -133,6 +133,8 @@ class duplicity (
   $cron_enabled              = $duplicity::params::cron_enabled,
   $exec_path                 = $duplicity::params::exec_path,
 
+  $duply_key_dir             = $duplicity::params::duply_key_dir,
+
   # deprecated
   $duply_executable = undef,
 ) inherits duplicity::params {

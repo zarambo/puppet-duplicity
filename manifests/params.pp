@@ -44,7 +44,7 @@ class duplicity::params {
   $duply_profile_pre_script_name = 'pre'
   $duply_profile_post_script_name = 'post'
   $duply_key_dir = $::osfamily ? {
-    default => '/etc/duply-keys'
+    default => '/etc/duply/keys'
   }
   $duply_public_key_dir = "${duply_key_dir}/public"
   $duply_private_key_dir = "${duply_key_dir}/private"
